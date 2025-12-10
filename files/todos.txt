@@ -5,3 +5,5 @@ bananas
 look at birds
 Fix the Drawer
 add a new member
+Make soup
+make pizza
