@@ -2,7 +2,7 @@ while True:
     user_action = input("Type add, show, edit, complete, or exit: ")
     user_action = user_action.strip()
 
-    if 'add' in user_action:
+    if user_action.startswith("add"):
         todo = user_action[4:]
 
         with open('files/todos.txt', 'r') as file:
@@ -13,17 +13,17 @@ while True:
         with open('files/todos.txt', 'w') as file:
             file.writelines(todos)
 
-    elif 'show' in user_action:
+    elif user_action.startswith("show"):
 
         with open('files/todos.txt', 'r') as file:
             todos = file.readlines()
 
         for index, item in enumerate(todos):
             item = item.strip('\n')
-            row = f"{index + 1}-{item}"
+            row = f"{index + 1} - {item}"
             print(row)
 
-    elif 'edit' in user_action:
+    elif user_action.startswith("edit"):
         number = int(user_action[5:])
         print(number)
 
@@ -38,7 +38,7 @@ while True:
         with open('files/todos.txt', 'w') as file:
             file.writelines(todos)
 
-    elif 'complete' in user_action:
+    elif user_action.startswith("complete"):
         number = int(user_action[9:])
 
         with open('files/todos.txt', 'r') as file:
@@ -53,9 +53,9 @@ while True:
         message = f'Todo {todo_to_remove} was removed from the list.'
         print(message)
 
-    elif 'exit' in user_action:
+    elif user_action.startswith("exit"):
         break
     else:
-        print("Command not valid")
+        print("Command is not valid")
 
 print("Bye!")

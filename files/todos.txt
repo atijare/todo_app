@@ -2,4 +2,7 @@ Shop
 Clean
 Laundry
 
-Eat
+bananas
+Clean the bag
+Fix the Drawer
+add a new member
