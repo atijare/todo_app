@@ -2,9 +2,8 @@ Shop
 Clean
 Laundry
 bananas
-look at birds
-Fix the Drawer
+SightseeingFix the Drawer
 add a new member
-Make soup
-make pizza
+Prepare Soupmake pizza
 Master Python!
+Play Basketball
