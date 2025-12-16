@@ -1,9 +1,4 @@
 Shop
 Clean
-Laundry
-bananas
-SightseeingFix the Drawer
-add a new member
-Prepare Soupmake pizza
-Master Python!
-Play Basketball
+Buy laundry detergent
+Do math homework
